@@ -16,7 +16,7 @@
 	color: red;
 	position: relative;
 	left: 0px;
-	display:0;
+	display: none;
 }
 
 #mobile1, #mobile2, #mobile3 {
