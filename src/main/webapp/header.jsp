@@ -16,12 +16,12 @@
 					<ul class="list_menu">
 						<li class="menu none_sub menu_join"><a href="index.jsp?folder=login&category=signUp"
 							class="link_menu">회원가입</a></li>
-						<li class="menu none_sub menu_login"><a href="#"
+						<li class="menu none_sub menu_login"><a href="index.jsp?folder=login&category=login"
 							class="link_menu">로그인</a> <!----></li>
 						<!---->
-						<li class="menu lst"><a href="#" class="link_menu">고객센터</a>
+						<li class="menu lst"><a href="index.jsp?folder=notice&category=notice" class="link_menu">고객센터</a>
 							<ul class="sub">
-								<li><a href="#none">공지사항</a></li>
+								<li><a href="="index.jsp?folder=notice&category=notice"">공지사항</a></li>
 								<li><a href="#none">1:1 문의</a></li>
 							</ul>
 						</li>

@@ -37,8 +37,8 @@
 	color: black;
 }
 
-#addressNo{
-cursor : pointer;
+#addressNo {
+	cursor: pointer;
 }
 
 #idCheck.btn.default, #emailCheck.btn.default {
@@ -46,6 +46,10 @@ cursor : pointer;
 	margin-left: 10px;
 	padding: 2px 10px;
 	border: 1px solid purple;
+}
+
+#wrapper{
+	float :left !important;
 }
 </style>
 
@@ -77,8 +81,8 @@ cursor : pointer;
 					<td><input type="password" name="password" id="password"
 						label="passwd" placeholder="비밀번호를 입력해주세요">
 						<div id="passwdMsg" class="error">비밀번호를 입력해 주세요</div>
-						<div id="passwdRegdMsg" class="error">10~16 자리, 영문/숫자/특수문자(공백
-							제외)만 허용하며, 2개 이상 조합</div></td>
+						<div id="passwdRegdMsg" class="error">10~16 자리,
+							영문/숫자/특수문자(공백 제외)만 허용하며, 2개 이상 조합</div></td>
 				</tr>
 				<tr class="member_pwd">
 					<th>비밀번호확인<span class="ico">*</span></th>
@@ -100,38 +104,38 @@ cursor : pointer;
 						class="btn default" id="emailCheck">중복확인</span>
 						<div id="emailMsg" class="error">이메일을 입력해 주세요.</div>
 						<div id="emailRegMsg" class="error">올바른 이메일 주소를 입력해해주세요.</div>
-						<div id="example_email" class="error">예시 : markeykurly@gmail.com</div></td>
+						<div id="example_email" class="error">예시 :
+							markeykurly@gmail.com</div></td>
 
 				</tr>
 				<tr class="field_phone">
 					<th>휴대폰<span class="ico">*</span></th>
 					<td><input type="text" name="mobile1" id="mobile1"
-						maxlength="3" label="mobile1"> <input type="text"
-						name="mobile2" id="mobile2" maxlength="4" label="mobile2">
+						maxlength="3" label="mobile1" placeholder = "000"> <input type="text"
+						name="mobile2" id="mobile2" maxlength="4" label="mobile2" placeholder = "0000">
 						<input type="text" name="mobile3" id="mobile3" maxlength="4"
-						label="mboile3">
+						label="mboile3" placeholder = "0000">
 						<div id="mobileMsg" class="error">전화번호를 입력해 주세요.</div>
 						<div id="mobileRegMsg" class="error">11~12자리 숫자로만 입력해 주세요.</div></td>
 				</tr>
 				<tr>
 					<th>주소<span class="ico">*</span></th>
-					<td class="field_address">
-						<div>
-							<div id="wrapper">
-								<input type="text" name="zipcode" id="zipcode" size="7"
-									readonly="readonly" placeholder="번지를 검색해 주세요."> <a
-									id="addressSearch" class="search"> <span id="addressNo"
-									class="address_no" data-text="재검색">주소 검색</span>
-								</a>
-							</div>
-							<input type="text" name="address1" id="address1"
-								readonly="readonly"  placeholder="주소를 검색해주세요."> <input type="text"
-								name="address2" id="address2" placeholder="나머지 주소를 입력해주세요">
-							<div id="addressMsg" class="error">번지 또는 주소를 검색해주세요.</div>
-							<div id="addressEmpty" class="error">상세 주소를 입력해주세요.</div>
-						</div>
-					</td>
 					
+					<td class="field_address"><input type="text" name="zipcode"
+						id="zipcode" size="7" readonly="readonly"
+						placeholder="번지를 검색해 주세요."> 
+						<a id="addressSearch" class="search"> 
+							<span id="addressNo" class="address_no" data-text="재검색">주소 검색</span>
+						</a>
+						<input type="text" name="address1" id="address1"
+						readonly="readonly" placeholder="주소를 검색해주세요."> <input
+						type="text" name="address2" id="address2"
+						placeholder="나머지 주소를 입력해주세요">
+						<div id="addressMsg" class="error">번지 또는 주소를 검색해주세요.</div>
+						<div id="addressEmpty" class="error">상세 주소를 입력해주세요.</div>
+					</td>
+						
+						
 				</tr>
 				</tbody>
 			</table>
@@ -256,9 +260,11 @@ $("#emailCheck").click(function() {
 		return;
 	}
 		 
-	window.open("<%=request.getContextPath()%>/login/email_check.jsp?email="+ $("#email").val(), 
-			"idcheck","width=540,height=350,left=700,top=400");
-	});
+	window.open("<%=request.getContextPath()%>
+	/login/email_check.jsp?email="
+										+ $("#email").val(), "idcheck",
+								"width=540,height=350,left=700,top=400");
+					});
 
 	$("#email").change(function() {
 		$("#emailCheckResult").val("0");

@@ -24,7 +24,7 @@
 			<h3>
 				<a class="tit" href="#none">카카오톡 문의</a>
 			</h3>
-			
+
 			<dl class="list">
 				<dt>365고객센터</dt>
 				<dd>오전 7시 - 오후 7시</dd>
@@ -41,16 +41,6 @@
 				<dd>고객센터 운영시간에 순차적으로 답변해드리겠습니다.</dd>
 			</dl>
 		</div>
-		<div class="cc_view cc_bulkorder">
-			<h3>
-				<a href="#"
-					class="tit">대량주문 문의</a>
-			</h3>
-			<p class="txt">비회원의 경우 메일로 문의 바랍니다.</p>
-		</div>
-	</div>
-	</div>
-	</div>
 	</div>
 </body>
 </html>
